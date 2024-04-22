@@ -22,5 +22,28 @@ Ce projet démontre l'intégration d'une interface utilisateur développée en Q
 
 ## Installation
 
-1. Clonez les dépôts sur votre machine locale :
 
+**Note pour les utilisateurs :**
+
+Ce projet présente une configuration spécifique en termes de compatibilité entre le serveur et le client.
+
+- Le **serveur Unity** inclus dans ce projet est spécifiquement conçu pour fonctionner sur **Windows** en raison de la compatibilité de Unity avec cette plateforme.
+
+- Le **client Qt C++**, quant à lui, a été développé et testé sur **Linux**. Cependant, il peut être possible de le faire fonctionner sur d'autres plateformes, mais cela n'a pas été testé.
+
+**Instructions pour les utilisateurs Windows :**
+
+- Pour exécuter le serveur Unity sur Windows, aucune étape supplémentaire n'est nécessaire, car Unity est nativement compatible avec cette plateforme.
+
+**Instructions pour les utilisateurs Linux :**
+
+- Pour utiliser le client Qt C++ sur Linux, veuillez suivre ces étapes :
+  1. Assurez-vous d'avoir les dépendances nécessaires installées sur votre système (Qt, CMake, etc.).
+  2. Clonez ce dépôt sur votre machine locale.
+  3. Compilez et exécutez le client Qt C++ en suivant les instructions fournies dans la documentation du projet.
+
+**Instructions pour les utilisateurs Windows souhaitant utiliser le client :**
+
+- Comme le client Qt C++ a été testé sur Linux et peut ne pas être entièrement compatible avec Windows, vous devrez installer gRPC manuellement sur votre système. Voici le lien vers la documentation pour vous guider dans le processus d'installation : [Installation de gRPC sur Windows](https://github.com/grpc/grpc/blob/master/BUILDING.md).
+
+Veuillez noter que la compatibilité du client avec Windows dépendra également des dépendances et des configurations spécifiques de votre système.
