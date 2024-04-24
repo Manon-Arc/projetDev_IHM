@@ -1,49 +1,48 @@
-# Projet de Contrôle d'Objet 3D avec Interface Qt C++ et Unity
+# 3D Object Control Project with Qt C++ Interface and Unity C#
 
 ### Repository
 
-- repo server / gestion Unity : https://github.com/Manon-Arc/IHM_Unity.git <br>
-- repo client IHM : https://github.com/Manon-Arc/IHM_Unity-Qt.git
+- Unity server / management: [https://github.com/Manon-Arc/IHM_Unity.git](https://github.com/Manon-Arc/IHM_Unity.git)
+- Qt UI client repository: [https://github.com/Manon-Arc/IHM_Unity-Qt.git](https://github.com/Manon-Arc/IHM_Unity-Qt.git)
 
-## Présentation
-Ce projet démontre l'intégration d'une interface utilisateur développée en Qt C++ pour contrôler un objet 3D visualisé dans Unity. L'interface utilisateur Qt permet à l'utilisateur de manipuler les propriétés de l'objet 3D, telles que sa position, sa rotation, et instantier des GameObject, tandis que Unity est utilisé pour visualiser l'objet 3D et appliquer les modifications en temps réel.
+## Presentation
+This project demonstrates the integration of a user interface developed in Qt C++ to control a 3D object visualized in Unity. The Qt user interface allows the user to manipulate the properties of the 3D object, such as its position, rotation, and instantiate GameObjects, while Unity is used to visualize the 3D object and apply the modifications in real time.
 
-## Fonctionnalités
+## Features
 
-- Interface utilisateur Qt C++ pour contrôler un objet 3D dans Unity.
-- Système de connexion (base de donnée)
-- Contrôle de la position, de la rotation et de l'échelle de l'objet 3D.
-- Visualisation en temps réel des modifications apportées à l'objet 3D dans Unity.
+- Qt C++ user interface to control a 3D object in Unity.
+- Connection system (database)
+- Control of the position, rotation, and scale of the 3D object.
+- Real-time visualization of modifications made to the 3D object in Unity.
 
-## Configuration Requise
+## Required Configuration
 
-- [Qt](https://www.qt.io/download) : Qt Creator est utilisé pour développer l'interface utilisateur en C++.
-- [Unity](https://unity.com/) : Unity est utilisé pour visualiser l'objet 3D et recevoir les commandes de contrôle.
+- [Qt](https://www.qt.io/download): Qt Creator is used to develop the user interface in C++.
+- [Unity](https://unity.com/): Unity is used to visualize the 3D object and receive control commands.
 
 ## Installation
 
+**Note for Users:**
 
-**Note pour les utilisateurs :**
+This project has specific configuration requirements in terms of compatibility between the server and the client.
 
-Ce projet présente une configuration spécifique en termes de compatibilité entre le serveur et le client.
+- The **Unity server** included in this project is specifically designed to run on **Windows** due to Unity's compatibility with this platform.
 
-- Le **serveur Unity** inclus dans ce projet est spécifiquement conçu pour fonctionner sur **Windows** en raison de la compatibilité de Unity avec cette plateforme.
+- The **Qt C++ client**, on the other hand, has been developed and tested on **Linux**. However, it may be possible to run it on other platforms, but this has not been tested.
 
-- Le **client Qt C++**, quant à lui, a été développé et testé sur **Linux**. Cependant, il peut être possible de le faire fonctionner sur d'autres plateformes, mais cela n'a pas été testé.
+**Instructions for Windows Users:**
 
-**Instructions pour les utilisateurs Windows :**
+- To run the Unity server on Windows, no additional steps are required, as Unity is natively compatible with this platform.
 
-- Pour exécuter le serveur Unity sur Windows, aucune étape supplémentaire n'est nécessaire, car Unity est nativement compatible avec cette plateforme.
+**Instructions for Linux Users:**
 
-**Instructions pour les utilisateurs Linux :**
+- To use the Qt C++ client on Linux, please follow these steps:
+   1. Ensure you have the necessary dependencies installed on your system (Qt, CMake, etc.).
+   2. Clone this repository to your local machine.
+   3. Compile and run the Qt C++ client by following the instructions provided in the project documentation.
 
-- Pour utiliser le client Qt C++ sur Linux, veuillez suivre ces étapes :
-  1. Assurez-vous d'avoir les dépendances nécessaires installées sur votre système (Qt, CMake, etc.).
-  2. Clonez ce dépôt sur votre machine locale.
-  3. Compilez et exécutez le client Qt C++ en suivant les instructions fournies dans la documentation du projet.
+**Instructions for Windows Users Wishing to Use the Client:**
 
-**Instructions pour les utilisateurs Windows souhaitant utiliser le client :**
+- As the Qt C++ client has been tested on Linux and may not be fully compatible with Windows, you will need to manually install gRPC on your system. Here is the link to the documentation to guide you through the installation process: [Installing gRPC on Windows](https://github.com/grpc/grpc/blob/master/BUILDING.md).
 
-- Comme le client Qt C++ a été testé sur Linux et peut ne pas être entièrement compatible avec Windows, vous devrez installer gRPC manuellement sur votre système. Voici le lien vers la documentation pour vous guider dans le processus d'installation : [Installation de gRPC sur Windows](https://github.com/grpc/grpc/blob/master/BUILDING.md).
-
-Veuillez noter que la compatibilité du client avec Windows dépendra également des dépendances et des configurations spécifiques de votre système.
+Please note that the compatibility of the client with Windows will also depend on the specific dependencies and configurations of your system.
