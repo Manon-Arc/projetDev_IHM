@@ -12,7 +12,7 @@ This project demonstrates the integration of a user interface developed in Qt C+
 
 - Qt C++ user interface to control a 3D object in Unity.
 - Connection system (database)
-- Control of the position, rotation, and scale of the 3D object.
+- Control of the position, and rotation of the 3D object and instantiate new GameObject.
 - Real-time visualization of modifications made to the 3D object in Unity.
 
 ## Required Configuration
